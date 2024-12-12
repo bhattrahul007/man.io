@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "alembic>=1.14.0",
+    "setuptools>=75.6.0",
 ]
 
 [tool.black]
@@ -29,7 +30,3 @@ exclude = [
 profile = "black"
 line_length = 100
 known_third_party = ["fastapi", "sqlalchemy", "uvicorn", "alembic", "pydantic", "starlette"]
-
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
